@@ -1,0 +1,526 @@
+@prefix : <urn:webprotege:ontology:0adba852-419a-4efa-a399-6c734704e7b4#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://webprotege.stanford.edu/R7JTfuKzSs0v11t1rDC3M58> a owl:DatatypeProperty ;
+    rdfs:label "Agent_Rating" ;
+    rdfs:comment "Agent Rating by Customer"^^xsd:string ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf <http://webprotege.stanford.edu/R4RPloVPzTpqU8kcAl3Dkr> .
+
+<http://webprotege.stanford.edu/R7b5ubchM3AotZLmbRNl2PK> a owl:DatatypeProperty ;
+    rdfs:label "Customer_FeedBack_Detail"^^xsd:string ;
+    rdfs:comment "Detailed Customer Feddback by Delivery Agent"^^xsd:string ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf <http://webprotege.stanford.edu/R8EJnTHAxqTvM0df0F3lrEC> .
+
+<http://webprotege.stanford.edu/R7pF0dVPd7pGsHUu2rqvdcV> a owl:DatatypeProperty ;
+    rdfs:label "Restaurant_Email" ;
+    rdfs:comment "Restaurant Email ID"^^xsd:string ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf <http://webprotege.stanford.edu/R8H3w5g9u3rddaoJUWKVeBj> .
+
+<http://webprotege.stanford.edu/R7tBnWkkWGK0LKps9niEyBB> a owl:DatatypeProperty ;
+    rdfs:label "Drinks_List" ;
+    rdfs:comment "List of all the drinks available"^^xsd:string ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf <http://webprotege.stanford.edu/R8xGJscgCZStVuvxTHYbswK> .
+
+<http://webprotege.stanford.edu/R85sPYK3R6YLuLztyelovCj> a owl:DatatypeProperty ;
+    rdfs:label "VegMenuContent" ;
+    rdfs:domain <http://webprotege.stanford.edu/RC0D8tpmGHzAw2GRuI5O54L> ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf <http://webprotege.stanford.edu/R8xGJscgCZStVuvxTHYbswK> .
+
+<http://webprotege.stanford.edu/R87pNLROGFWrF5olpADehgz> a owl:DatatypeProperty ;
+    rdfs:label "Customer_Rating" ;
+    rdfs:comment "Detailed Customer Rating(1-5)"^^xsd:string ;
+    rdfs:range xsd:integer ;
+    rdfs:subPropertyOf <http://webprotege.stanford.edu/R8EJnTHAxqTvM0df0F3lrEC> .
+
+<http://webprotege.stanford.edu/R8jARtLXEPEM00GXrJUF5Mc> a owl:DatatypeProperty ;
+    rdfs:label "VehicleDetails" ;
+    rdfs:subPropertyOf <http://webprotege.stanford.edu/RCPwdEdalCPmPVYPzajbTz> .
+
+<http://webprotege.stanford.edu/R8loj2kfwqgkGHW7qeRYx5n> a owl:DatatypeProperty ;
+    rdfs:label "Amount" ;
+    rdfs:comment "Total Order Amount"^^xsd:string ;
+    rdfs:range xsd:integer ;
+    rdfs:subPropertyOf <http://webprotege.stanford.edu/RDb7amnSUHVG3PlShcsTcAn> .
+
+<http://webprotege.stanford.edu/R8tV1XfEH6y8CKUsXL9tW2x> a owl:DatatypeProperty ;
+    rdfs:label "CustomerName" ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf <http://webprotege.stanford.edu/R7AAcDk7WeUxIKeQ1PIKKr> .
+
+<http://webprotege.stanford.edu/R97LOWR9JP6eA0Hn04xQBmo> a owl:DatatypeProperty ;
+    rdfs:label "Pincode" ;
+    rdfs:comment "City Pincode of Customer"^^xsd:string,
+        "Restaurant city's Pin code"^^xsd:string ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf <http://webprotege.stanford.edu/RCJ9tr2hWRif8sv1TRHY2Tb>,
+        <http://webprotege.stanford.edu/RCrfjs7UgSmJonhePLXzOZM> .
+
+<http://webprotege.stanford.edu/R98QAq8ezuDv4jkLopMemw6> a owl:DatatypeProperty ;
+    rdfs:label "ManagerName" ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf <http://webprotege.stanford.edu/RCxcwc6pNzvLCbbWld21vD> .
+
+<http://webprotege.stanford.edu/R9FHP0aDstZYG7tQj1L6PLN> a owl:DatatypeProperty ;
+    rdfs:label "NonVegMenuContent" ;
+    rdfs:domain <http://webprotege.stanford.edu/RBbspCC1EXO2JZpSTpuFUVK> ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf <http://webprotege.stanford.edu/R8xGJscgCZStVuvxTHYbswK> .
+
+<http://webprotege.stanford.edu/R9LCjoXsvKLuhqzvk93dsPF> a owl:DatatypeProperty ;
+    rdfs:label "Customer_Email"^^xsd:string ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf <http://webprotege.stanford.edu/R85489vmFRnnjqaF2rHbfsM> .
+
+<http://webprotege.stanford.edu/R9YJMmAVuPxPgcaGt2yfHS2> a owl:DatatypeProperty ;
+    rdfs:label "PaymentStatus" ;
+    rdfs:comment "status like \"Failed\"/\"Successful\"/"^^xsd:string ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf <http://webprotege.stanford.edu/RDb7amnSUHVG3PlShcsTcAn> .
+
+<http://webprotege.stanford.edu/R9Yoa9oqAkV1EedevctkoAG> a owl:DatatypeProperty ;
+    rdfs:label "Agent_FeedBack_Detail" ;
+    rdfs:comment "Delivery Agent Feedback Detail"^^xsd:string ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf <http://webprotege.stanford.edu/R4RPloVPzTpqU8kcAl3Dkr> .
+
+<http://webprotege.stanford.edu/R9q3YgzgZCGqWmsos9yGNi9> a owl:DatatypeProperty ;
+    rdfs:label "Restaurant_FeedBack_Detail" ;
+    rdfs:comment "Detail Restaurant Feedback"^^xsd:string ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf <http://webprotege.stanford.edu/RBIF6veGOHOTBmEO0B2wvy7> .
+
+<http://webprotege.stanford.edu/RB3bPSz23JGTUBlvFUMlumm> a owl:ObjectProperty ;
+    rdfs:label "Eats" ;
+    rdfs:domain <http://webprotege.stanford.edu/RBPJJu8bG3vZ17Q5hA82MLh> ;
+    rdfs:range <http://webprotege.stanford.edu/R8x5ufVivKG7njIRoqA1BHJ> .
+
+<http://webprotege.stanford.edu/RBIiwUHb4W5kwIxFVfbFmyE> a owl:DatatypeProperty ;
+    rdfs:label "AgentName" ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf <http://webprotege.stanford.edu/RCPwdEdalCPmPVYPzajbTz> .
+
+<http://webprotege.stanford.edu/RBiJjxL5TZOvMvyHTg0Uoev> a owl:DatatypeProperty ;
+    rdfs:label "Chat_Support" ;
+    rdfs:comment "Chat_Details"^^xsd:string ;
+    rdfs:domain <http://webprotege.stanford.edu/RLSIOBaSLwVwDNkN3Obg27> ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf <http://webprotege.stanford.edu/RCwfhCqKf1QhFsZHpu3tBuy> .
+
+<http://webprotege.stanford.edu/RCWuxUrDSBmQAm7eNmWrO6M> a owl:DatatypeProperty ;
+    rdfs:label "RestaurantName" ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf <http://webprotege.stanford.edu/R8xGJscgCZStVuvxTHYbswK> .
+
+<http://webprotege.stanford.edu/RCpHJmbKiHoTsxUSiQnBGp1> a owl:DatatypeProperty ;
+    rdfs:label "Phone_No." ;
+    rdfs:comment "Restaurant Phone No."^^xsd:string ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf <http://webprotege.stanford.edu/R8H3w5g9u3rddaoJUWKVeBj> .
+
+<http://webprotege.stanford.edu/RCzBgbHD7Vm5O3jVE4ntGLZ> a owl:DatatypeProperty ;
+    rdfs:label "Call_Support" ;
+    rdfs:comment "Call Support Details"^^xsd:string ;
+    rdfs:domain <http://webprotege.stanford.edu/RBYkQN5aZtyiCyynBAP9pyZ> ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf <http://webprotege.stanford.edu/RCwfhCqKf1QhFsZHpu3tBuy> .
+
+<http://webprotege.stanford.edu/RDEcFue2m6UuIuMtuTJFZWI> a owl:DatatypeProperty ;
+    rdfs:label "Restaurant_Rating" ;
+    rdfs:comment "Restaurant Rating By Customer(1-5)"^^xsd:string ;
+    rdfs:range xsd:integer ;
+    rdfs:subPropertyOf <http://webprotege.stanford.edu/RBIF6veGOHOTBmEO0B2wvy7> .
+
+<http://webprotege.stanford.edu/RDHjCsHiO01GLiOLPIgFKYb> a owl:DatatypeProperty ;
+    rdfs:label "Customer_PhoneNo." ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf <http://webprotege.stanford.edu/R85489vmFRnnjqaF2rHbfsM> .
+
+<http://webprotege.stanford.edu/REhwsPiNE41LHzXChT0OQS> a owl:DatatypeProperty ;
+    rdfs:label "DeliverServiceProviderID" ;
+    rdfs:domain <http://webprotege.stanford.edu/RCXabHoTWnVUCzHwQZ8zkZh> ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf owl:topDataProperty .
+
+<http://webprotege.stanford.edu/RHY4VM01JHBgetRcGRxGBp> a owl:DatatypeProperty ;
+    rdfs:label "DeliveryAgent_PhoneNo." ;
+    rdfs:comment "Delivery Agent Mobile No"^^xsd:string ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf <http://webprotege.stanford.edu/RCPwdEdalCPmPVYPzajbTz> .
+
+<http://webprotege.stanford.edu/RZbHPRaWRMAdcuf6Q2OgVI> a owl:DatatypeProperty ;
+    rdfs:label "Address_Detail" ;
+    rdfs:comment "Main customer address to be written here"^^xsd:string,
+        "Restaurant Main Address detail"^^xsd:string ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf <http://webprotege.stanford.edu/RCJ9tr2hWRif8sv1TRHY2Tb>,
+        <http://webprotege.stanford.edu/RCrfjs7UgSmJonhePLXzOZM> .
+
+<http://webprotege.stanford.edu/RipSkDwyh1dVcjXqx8HTwp> a owl:DatatypeProperty ;
+    rdfs:label "CardDetail" ;
+    rdfs:comment "Debit/Credit Card Detail"^^xsd:string ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf <http://webprotege.stanford.edu/RDb7amnSUHVG3PlShcsTcAn> .
+
+<http://webprotege.stanford.edu/RmVaYeNa44s6i7uXCAVhX9> a owl:DatatypeProperty ;
+    rdfs:label "UPI_Detail" ;
+    rdfs:comment "UPI Details"^^xsd:string ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf <http://webprotege.stanford.edu/RDb7amnSUHVG3PlShcsTcAn> .
+
+<http://webprotege.stanford.edu/RnjoElGXqkcfbspdq6zjxg> a owl:DatatypeProperty ;
+    rdfs:label "Restaurant_Name" ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf <http://webprotege.stanford.edu/R8xGJscgCZStVuvxTHYbswK> .
+
+owl:Thing rdfs:label "ManagementSystem"^^xsd:string .
+
+<urn:webprotege:ontology:0adba852-419a-4efa-a399-6c734704e7b4> a owl:Ontology .
+
+:127 a owl:NamedIndividual,
+        :order .
+
+:410 a owl:NamedIndividual,
+        :Payment .
+
+:560212 a owl:NamedIndividual,
+        :Customer .
+
+:56895 a owl:NamedIndividual,
+        :Payment,
+        :order .
+
+:6548 a owl:NamedIndividual,
+        :Customer,
+        :Payment,
+        :order .
+
+:789 a owl:NamedIndividual,
+        :Payment,
+        <urn:webprotege:ontology:0adba852-419a-4efa-a399-6c734704e7b4#Rmenu/Drinks/item> .
+
+:9256878932 a owl:NamedIndividual,
+        :Customer .
+
+:Bangalore a owl:NamedIndividual,
+        :Customer .
+
+<urn:webprotege:ontology:0adba852-419a-4efa-a399-6c734704e7b4#Chicken_Rolls,Lime_Juice> a owl:NamedIndividual,
+        :order .
+
+:Karnataka a owl:NamedIndividual,
+        :Customer .
+
+:Mayank_Jain a owl:NamedIndividual,
+        :Customer .
+
+<urn:webprotege:ontology:0adba852-419a-4efa-a399-6c734704e7b4#['Beer',_'150']> a owl:NamedIndividual,
+        <urn:webprotege:ontology:0adba852-419a-4efa-a399-6c734704e7b4#Rmenu/Drinks/item> .
+
+<urn:webprotege:ontology:0adba852-419a-4efa-a399-6c734704e7b4#['ButterMilk',_'70']> a owl:NamedIndividual,
+        <urn:webprotege:ontology:0adba852-419a-4efa-a399-6c734704e7b4#Rmenu/Drinks/item> .
+
+<urn:webprotege:ontology:0adba852-419a-4efa-a399-6c734704e7b4#['Lime_Juice',_'110']> a owl:NamedIndividual,
+        <urn:webprotege:ontology:0adba852-419a-4efa-a399-6c734704e7b4#Rmenu/Drinks/item> .
+
+<urn:webprotege:ontology:0adba852-419a-4efa-a399-6c734704e7b4#['Virgin_Mojito',_'120']> a owl:NamedIndividual,
+        <urn:webprotege:ontology:0adba852-419a-4efa-a399-6c734704e7b4#Rmenu/Drinks/item> .
+
+<urn:webprotege:ontology:0adba852-419a-4efa-a399-6c734704e7b4#mayank@ybl> a owl:NamedIndividual,
+        :Payment .
+
+<http://webprotege.stanford.edu/R8Z4kyqmMvO0xkBgbwaUyDa> a owl:ObjectProperty ;
+    rdfs:label "DeliversTo" ;
+    rdfs:domain <http://webprotege.stanford.edu/RBWH4XAJd1hhI2jkD6XpB29> ;
+    rdfs:range <http://webprotege.stanford.edu/RBPJJu8bG3vZ17Q5hA82MLh> .
+
+<http://webprotege.stanford.edu/R8sgFHS86nROr9qyH6fsjNu> a owl:ObjectProperty ;
+    rdfs:label "Use" ;
+    rdfs:domain <http://webprotege.stanford.edu/RBWH4XAJd1hhI2jkD6XpB29> ;
+    rdfs:range <http://webprotege.stanford.edu/RDe4s6AGSFCVZNYcBp3qL4P> .
+
+<http://webprotege.stanford.edu/R9LYFTRKtKWQytBOUTzI1Nj> a owl:ObjectProperty ;
+    rdfs:label "FeedBackTo" ;
+    rdfs:domain <http://webprotege.stanford.edu/RBPJJu8bG3vZ17Q5hA82MLh> ;
+    rdfs:range <http://webprotege.stanford.edu/R7iNKiSWVkt70AUZiRep7NZ> .
+
+<http://webprotege.stanford.edu/RB4FElvrnxm8fyZSTOhzzG> a owl:ObjectProperty ;
+    rdfs:label "ServesTo" ;
+    rdfs:domain <http://webprotege.stanford.edu/R7iNKiSWVkt70AUZiRep7NZ> ;
+    rdfs:range <http://webprotege.stanford.edu/RBPJJu8bG3vZ17Q5hA82MLh> .
+
+<http://webprotege.stanford.edu/RBYkQN5aZtyiCyynBAP9pyZ> a owl:Class ;
+    rdfs:label "CallSupport" ;
+    rdfs:subClassOf <http://webprotege.stanford.edu/RBLCZ1qATHZq7GoWq7iXTzD> .
+
+<http://webprotege.stanford.edu/RBbspCC1EXO2JZpSTpuFUVK> a owl:Class ;
+    rdfs:label "NonVegMenu" ;
+    rdfs:subClassOf <http://webprotege.stanford.edu/R8x5ufVivKG7njIRoqA1BHJ> .
+
+<http://webprotege.stanford.edu/RC0D8tpmGHzAw2GRuI5O54L> a owl:Class ;
+    rdfs:label "VegMenu" ;
+    rdfs:subClassOf <http://webprotege.stanford.edu/R8x5ufVivKG7njIRoqA1BHJ> .
+
+<http://webprotege.stanford.edu/RCB2KdWsdAQ7QsvIwQrALUZ> a owl:ObjectProperty ;
+    rdfs:label "TippedTo" ;
+    rdfs:domain <http://webprotege.stanford.edu/RBPJJu8bG3vZ17Q5hA82MLh> ;
+    rdfs:range <http://webprotege.stanford.edu/RBWH4XAJd1hhI2jkD6XpB29> .
+
+<http://webprotege.stanford.edu/RCUteHB5v3toxEO0btAOLDF> a owl:ObjectProperty ;
+    rdfs:label "KeepTrackOf" ;
+    rdfs:domain <http://webprotege.stanford.edu/R8DEzXH7pOqwB33gBYEDEDJ> ;
+    rdfs:range <http://webprotege.stanford.edu/RDWF0IJHEMa7qhkTpP2icxs> .
+
+<http://webprotege.stanford.edu/RCgxBQuGy9Uq4hNLV8GCPtx> a owl:ObjectProperty ;
+    rdfs:label "RequestedBy" ;
+    rdfs:domain <http://webprotege.stanford.edu/RBPJJu8bG3vZ17Q5hA82MLh> ;
+    rdfs:range <http://webprotege.stanford.edu/R8DEzXH7pOqwB33gBYEDEDJ> .
+
+<http://webprotege.stanford.edu/RCxcwc6pNzvLCbbWld21vD> a owl:DatatypeProperty ;
+    rdfs:label "ManagerId" ;
+    rdfs:domain <http://webprotege.stanford.edu/R7x1gTVQphnPmP7A8Fpe1AX> ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf owl:topDataProperty .
+
+<http://webprotege.stanford.edu/RDJwqz3tVzMNl35Ytk2jRw5> a owl:ObjectProperty ;
+    rdfs:label "ProvideAgent" ;
+    rdfs:domain <http://webprotege.stanford.edu/RCXabHoTWnVUCzHwQZ8zkZh> ;
+    rdfs:range <http://webprotege.stanford.edu/R8DEzXH7pOqwB33gBYEDEDJ> .
+
+<http://webprotege.stanford.edu/RLSIOBaSLwVwDNkN3Obg27> a owl:Class ;
+    rdfs:label "ChatSupport" ;
+    rdfs:subClassOf <http://webprotege.stanford.edu/RBLCZ1qATHZq7GoWq7iXTzD> .
+
+<http://webprotege.stanford.edu/RRHO82jDSvMExgK5IxjTRI> a owl:ObjectProperty ;
+    rdfs:label "Handels" ;
+    rdfs:domain <http://webprotege.stanford.edu/R7x1gTVQphnPmP7A8Fpe1AX> ;
+    rdfs:range <http://webprotege.stanford.edu/RBLCZ1qATHZq7GoWq7iXTzD> .
+
+<http://webprotege.stanford.edu/R4RPloVPzTpqU8kcAl3Dkr> a owl:DatatypeProperty ;
+    rdfs:label "DeliveryAgentFeeds" ;
+    rdfs:domain <http://webprotege.stanford.edu/RBC6FgHzL4npHR0jd0BLdj7> ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf <http://webprotege.stanford.edu/RCPwdEdalCPmPVYPzajbTz> .
+
+<http://webprotege.stanford.edu/R7ytJx3wwwUiUmLJSIbe96A> a owl:Class ;
+    rdfs:label "RestaurantFeeds"^^xsd:string ;
+    rdfs:subClassOf <http://webprotege.stanford.edu/R8t7xwYZ66IWwGtQ4whppVw> .
+
+<http://webprotege.stanford.edu/R85489vmFRnnjqaF2rHbfsM> a owl:DatatypeProperty ;
+    rdfs:label "Customer_ContactDetail" ;
+    rdfs:subPropertyOf <http://webprotege.stanford.edu/R7AAcDk7WeUxIKeQ1PIKKr> .
+
+<http://webprotege.stanford.edu/R8EJnTHAxqTvM0df0F3lrEC> a owl:DatatypeProperty ;
+    rdfs:label "CustomerFeeds" ;
+    rdfs:domain <http://webprotege.stanford.edu/RBSnAThnuCdqPuS6rKTMkxp> ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf <http://webprotege.stanford.edu/R7AAcDk7WeUxIKeQ1PIKKr> .
+
+<http://webprotege.stanford.edu/R8H3w5g9u3rddaoJUWKVeBj> a owl:DatatypeProperty ;
+    rdfs:label "Restaurant_ContactDetail" ;
+    rdfs:subPropertyOf <http://webprotege.stanford.edu/R8xGJscgCZStVuvxTHYbswK> .
+
+<http://webprotege.stanford.edu/RBC6FgHzL4npHR0jd0BLdj7> a owl:Class ;
+    rdfs:label "DeliveryAgentFeeds"^^xsd:string ;
+    rdfs:subClassOf <http://webprotege.stanford.edu/R8t7xwYZ66IWwGtQ4whppVw> .
+
+<http://webprotege.stanford.edu/RBI1VdgHelj7D52ByC1c4HN> a owl:ObjectProperty ;
+    rdfs:label "PaidTo" ;
+    rdfs:domain <http://webprotege.stanford.edu/R8DEzXH7pOqwB33gBYEDEDJ>,
+        <http://webprotege.stanford.edu/RBPJJu8bG3vZ17Q5hA82MLh> ;
+    rdfs:range <http://webprotege.stanford.edu/R7iNKiSWVkt70AUZiRep7NZ>,
+        <http://webprotege.stanford.edu/R8DEzXH7pOqwB33gBYEDEDJ> .
+
+<http://webprotege.stanford.edu/RBIF6veGOHOTBmEO0B2wvy7> a owl:DatatypeProperty ;
+    rdfs:label "RestaurantFeeds" ;
+    rdfs:domain <http://webprotege.stanford.edu/R7ytJx3wwwUiUmLJSIbe96A> ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf <http://webprotege.stanford.edu/R8xGJscgCZStVuvxTHYbswK> .
+
+<http://webprotege.stanford.edu/RBSnAThnuCdqPuS6rKTMkxp> a owl:Class ;
+    rdfs:label "CustomerFeeds"^^xsd:string ;
+    rdfs:subClassOf <http://webprotege.stanford.edu/R8t7xwYZ66IWwGtQ4whppVw> .
+
+<http://webprotege.stanford.edu/RBXNCFeJ8XWf798gOcnkVzw> a owl:Class ;
+    rdfs:label "Person" .
+
+<http://webprotege.stanford.edu/RCJ9tr2hWRif8sv1TRHY2Tb> a owl:DatatypeProperty ;
+    rdfs:label "Restaurant_Address" ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf <http://webprotege.stanford.edu/R8xGJscgCZStVuvxTHYbswK> .
+
+<http://webprotege.stanford.edu/RCXabHoTWnVUCzHwQZ8zkZh> a owl:Class ;
+    rdfs:label "DeliveryServiceProvider" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty <http://webprotege.stanford.edu/RDJwqz3tVzMNl35Ytk2jRw5> ;
+            owl:someValuesFrom <http://webprotege.stanford.edu/R8DEzXH7pOqwB33gBYEDEDJ> ] .
+
+<http://webprotege.stanford.edu/RCrfjs7UgSmJonhePLXzOZM> a owl:DatatypeProperty ;
+    rdfs:label "Customer_Address" ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf <http://webprotege.stanford.edu/R7AAcDk7WeUxIKeQ1PIKKr> .
+
+<http://webprotege.stanford.edu/RCwfhCqKf1QhFsZHpu3tBuy> a owl:DatatypeProperty ;
+    rdfs:label "Support_ID" ;
+    rdfs:domain <http://webprotege.stanford.edu/RBLCZ1qATHZq7GoWq7iXTzD> ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf owl:topDataProperty .
+
+<http://webprotege.stanford.edu/RDN7QmWfOChJg7poCuQnDDd> a owl:ObjectProperty ;
+    rdfs:label "Serves" ;
+    rdfs:domain <http://webprotege.stanford.edu/R7iNKiSWVkt70AUZiRep7NZ> ;
+    rdfs:range <http://webprotege.stanford.edu/R8x5ufVivKG7njIRoqA1BHJ>,
+        <http://webprotege.stanford.edu/Rnuq3FpyJU1vQy6pPhU9oG> .
+
+<http://webprotege.stanford.edu/RDe4s6AGSFCVZNYcBp3qL4P> a owl:Class ;
+    rdfs:label "ModeOfTransport" .
+
+<http://webprotege.stanford.edu/RDqmr5cwi1Y8zAWPL4pyE2H> a owl:Class ;
+    rdfs:label "Orders" ;
+    rdfs:subClassOf <http://webprotege.stanford.edu/R8DEzXH7pOqwB33gBYEDEDJ> .
+
+<http://webprotege.stanford.edu/Rnuq3FpyJU1vQy6pPhU9oG> a owl:Class ;
+    rdfs:label "Drinks" ;
+    rdfs:subClassOf <http://webprotege.stanford.edu/RYsdrMeS1d2XSW33oS3Uk4> .
+
+<http://webprotege.stanford.edu/R7TgW7ebIZUYCjrE6XAADjl> a owl:ObjectProperty ;
+    rdfs:label "Manages" ;
+    rdfs:domain <http://webprotege.stanford.edu/R7x1gTVQphnPmP7A8Fpe1AX> ;
+    rdfs:range <http://webprotege.stanford.edu/RBWH4XAJd1hhI2jkD6XpB29> .
+
+<http://webprotege.stanford.edu/R7x1gTVQphnPmP7A8Fpe1AX> a owl:Class ;
+    rdfs:label "Manager" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty <http://webprotege.stanford.edu/RRHO82jDSvMExgK5IxjTRI> ;
+            owl:someValuesFrom <http://webprotege.stanford.edu/RBLCZ1qATHZq7GoWq7iXTzD> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://webprotege.stanford.edu/R7TgW7ebIZUYCjrE6XAADjl> ;
+            owl:someValuesFrom <http://webprotege.stanford.edu/RBWH4XAJd1hhI2jkD6XpB29> ],
+        <http://webprotege.stanford.edu/R8DEzXH7pOqwB33gBYEDEDJ> .
+
+<http://webprotege.stanford.edu/RDVoPhXEHLgnJFRqGhz0g4u> a owl:ObjectProperty ;
+    rdfs:label "ReviewedTo" ;
+    rdfs:domain <http://webprotege.stanford.edu/RBPJJu8bG3vZ17Q5hA82MLh>,
+        <http://webprotege.stanford.edu/RBWH4XAJd1hhI2jkD6XpB29> ;
+    rdfs:range <http://webprotege.stanford.edu/R7iNKiSWVkt70AUZiRep7NZ>,
+        <http://webprotege.stanford.edu/RBPJJu8bG3vZ17Q5hA82MLh>,
+        <http://webprotege.stanford.edu/RBWH4XAJd1hhI2jkD6XpB29> .
+
+<http://webprotege.stanford.edu/RDWF0IJHEMa7qhkTpP2icxs> a owl:Class ;
+    rdfs:label "Payments" ;
+    rdfs:subClassOf <http://webprotege.stanford.edu/R8DEzXH7pOqwB33gBYEDEDJ> .
+
+<http://webprotege.stanford.edu/RYsdrMeS1d2XSW33oS3Uk4> a owl:Class ;
+    rdfs:label "RMenu"^^xsd:string ;
+    rdfs:subClassOf <http://webprotege.stanford.edu/R7iNKiSWVkt70AUZiRep7NZ> .
+
+<http://webprotege.stanford.edu/R7AAcDk7WeUxIKeQ1PIKKr> a owl:DatatypeProperty ;
+    rdfs:label "CutomerId" ;
+    rdfs:domain <http://webprotege.stanford.edu/RBPJJu8bG3vZ17Q5hA82MLh>,
+        <http://webprotege.stanford.edu/RBSnAThnuCdqPuS6rKTMkxp> ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf owl:topDataProperty .
+
+<http://webprotege.stanford.edu/R8t7xwYZ66IWwGtQ4whppVw> a owl:Class ;
+    rdfs:label "FeedBacks" ;
+    rdfs:subClassOf <http://webprotege.stanford.edu/R8DEzXH7pOqwB33gBYEDEDJ> .
+
+<http://webprotege.stanford.edu/RCPwdEdalCPmPVYPzajbTz> a owl:DatatypeProperty ;
+    rdfs:label "DeliveryAgentId" ;
+    rdfs:domain <http://webprotege.stanford.edu/RBC6FgHzL4npHR0jd0BLdj7>,
+        <http://webprotege.stanford.edu/RBWH4XAJd1hhI2jkD6XpB29> ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf owl:topDataProperty .
+
+<http://webprotege.stanford.edu/RDb7amnSUHVG3PlShcsTcAn> a owl:DatatypeProperty ;
+    rdfs:label "OrderId" ;
+    rdfs:domain <http://webprotege.stanford.edu/RDWF0IJHEMa7qhkTpP2icxs>,
+        <http://webprotege.stanford.edu/RDqmr5cwi1Y8zAWPL4pyE2H> ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf owl:topDataProperty .
+
+<http://webprotege.stanford.edu/R8x5ufVivKG7njIRoqA1BHJ> a owl:Class ;
+    rdfs:label "Food" ;
+    rdfs:subClassOf <http://webprotege.stanford.edu/RYsdrMeS1d2XSW33oS3Uk4> .
+
+<http://webprotege.stanford.edu/RBLCZ1qATHZq7GoWq7iXTzD> a owl:Class ;
+    rdfs:label "Support" ;
+    rdfs:subClassOf <http://webprotege.stanford.edu/R8DEzXH7pOqwB33gBYEDEDJ> .
+
+<http://webprotege.stanford.edu/R8xGJscgCZStVuvxTHYbswK> a owl:DatatypeProperty ;
+    rdfs:label "RestaurantId" ;
+    rdfs:domain <http://webprotege.stanford.edu/R7iNKiSWVkt70AUZiRep7NZ>,
+        <http://webprotege.stanford.edu/R7ytJx3wwwUiUmLJSIbe96A>,
+        <http://webprotege.stanford.edu/RYsdrMeS1d2XSW33oS3Uk4> ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf owl:topDataProperty .
+
+<http://webprotege.stanford.edu/RBWH4XAJd1hhI2jkD6XpB29> a owl:Class ;
+    rdfs:label "DeliveryAgent"^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty <http://webprotege.stanford.edu/RDVoPhXEHLgnJFRqGhz0g4u> ;
+            owl:someValuesFrom <http://webprotege.stanford.edu/RBPJJu8bG3vZ17Q5hA82MLh> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://webprotege.stanford.edu/R8sgFHS86nROr9qyH6fsjNu> ;
+            owl:someValuesFrom <http://webprotege.stanford.edu/RDe4s6AGSFCVZNYcBp3qL4P> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://webprotege.stanford.edu/R8Z4kyqmMvO0xkBgbwaUyDa> ;
+            owl:someValuesFrom <http://webprotege.stanford.edu/RBPJJu8bG3vZ17Q5hA82MLh> ],
+        <http://webprotege.stanford.edu/RBXNCFeJ8XWf798gOcnkVzw> .
+
+<http://webprotege.stanford.edu/R7iNKiSWVkt70AUZiRep7NZ> a owl:Class ;
+    rdfs:label "Restaurant" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty <http://webprotege.stanford.edu/RDN7QmWfOChJg7poCuQnDDd> ;
+            owl:someValuesFrom <http://webprotege.stanford.edu/R8x5ufVivKG7njIRoqA1BHJ> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://webprotege.stanford.edu/RDN7QmWfOChJg7poCuQnDDd> ;
+            owl:someValuesFrom <http://webprotege.stanford.edu/Rnuq3FpyJU1vQy6pPhU9oG> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://webprotege.stanford.edu/RB4FElvrnxm8fyZSTOhzzG> ;
+            owl:someValuesFrom <http://webprotege.stanford.edu/RBPJJu8bG3vZ17Q5hA82MLh> ],
+        <http://webprotege.stanford.edu/R8DEzXH7pOqwB33gBYEDEDJ> .
+
+<http://webprotege.stanford.edu/R8DEzXH7pOqwB33gBYEDEDJ> a owl:Class ;
+    rdfs:label "FoodDeliverApp" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty <http://webprotege.stanford.edu/RBI1VdgHelj7D52ByC1c4HN> ;
+            owl:someValuesFrom <http://webprotege.stanford.edu/R7iNKiSWVkt70AUZiRep7NZ> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://webprotege.stanford.edu/R7TgW7ebIZUYCjrE6XAADjl> ;
+            owl:someValuesFrom <http://webprotege.stanford.edu/RDqmr5cwi1Y8zAWPL4pyE2H> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://webprotege.stanford.edu/R7TgW7ebIZUYCjrE6XAADjl> ;
+            owl:someValuesFrom <http://webprotege.stanford.edu/R8t7xwYZ66IWwGtQ4whppVw> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://webprotege.stanford.edu/RCUteHB5v3toxEO0btAOLDF> ;
+            owl:someValuesFrom <http://webprotege.stanford.edu/RDWF0IJHEMa7qhkTpP2icxs> ] .
+
+<http://webprotege.stanford.edu/RBPJJu8bG3vZ17Q5hA82MLh> a owl:Class ;
+    rdfs:label "Customer" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty <http://webprotege.stanford.edu/RCgxBQuGy9Uq4hNLV8GCPtx> ;
+            owl:someValuesFrom <http://webprotege.stanford.edu/R7iNKiSWVkt70AUZiRep7NZ> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://webprotege.stanford.edu/RDVoPhXEHLgnJFRqGhz0g4u> ;
+            owl:someValuesFrom <http://webprotege.stanford.edu/RBWH4XAJd1hhI2jkD6XpB29> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://webprotege.stanford.edu/R9LYFTRKtKWQytBOUTzI1Nj> ;
+            owl:someValuesFrom <http://webprotege.stanford.edu/R7iNKiSWVkt70AUZiRep7NZ> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://webprotege.stanford.edu/RCB2KdWsdAQ7QsvIwQrALUZ> ;
+            owl:someValuesFrom <http://webprotege.stanford.edu/RBWH4XAJd1hhI2jkD6XpB29> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://webprotege.stanford.edu/RBI1VdgHelj7D52ByC1c4HN> ;
+            owl:someValuesFrom <http://webprotege.stanford.edu/R8DEzXH7pOqwB33gBYEDEDJ> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://webprotege.stanford.edu/RDVoPhXEHLgnJFRqGhz0g4u> ;
+            owl:someValuesFrom <http://webprotege.stanford.edu/R7iNKiSWVkt70AUZiRep7NZ> ],
+        <http://webprotege.stanford.edu/RBXNCFeJ8XWf798gOcnkVzw> .
+

@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FoodDelivery
+[
+
+<!ELEMENT FoodDelivery (Customers,Restaurants,DeliveryAgents,Feedbacks,Payments,Orders)>
+<!ELEMENT Customers (Customer+)>
+<!ELEMENT Restaurants (Restaurant+)>
+<!ELEMENT DeliveryAgents (DeliveryAgent+)>
+<!ELEMENT Feedbacks (Feedback+)>
+<!ELEMENT Payments (Payment+)>
+<!ELEMENT Orders (Order+)>
+<!ELEMENT Customer (Cname,Cphone,Cemail?,Caddress)>
+<!ELEMENT Caddress (City,State,Zip)>
+<!ATTLIST Customer Customerid ID #REQUIRED>
+<!ATTLIST Customer gender (male|female) #REQUIRED >
+<!ELEMENT Restaurant (Rname,Raddress,Rcontact,Rmenu)>
+<!ELEMENT Raddress (City,State,Zip)>
+<!ELEMENT Rmenu (Vegmenu?,Nonvegmenu?,Drinks*)>
+<!ELEMENT Vegmenu (item+)>
+<!ELEMENT NonVegmenu (item+)>
+<!ELEMENT Drinks (item+)>
+<!ELEMENT item (name, price)>
+<!ATTLIST Restaurant Restaurantid ID #REQUIRED>
+<!ELEMENT DeliveryAgent (Dname,Dmodoftransport,DContact)>
+<!ATTLIST DeliveryAgent DeliveryAgentid ID #REQUIRED>
+<!ELEMENT Feedback (Customerfeeds,Restaurantfeeds,Deliveryagentfeeds)>
+<!ELEMENT Customerfeeds (Customerfeed+)>
+<!ELEMENT Customerfeed (Rating,Customerid,DeliveryAgentid )>
+<!ELEMENT Restaurantfeeds (Restaurantfeed+)>
+<!ELEMENT Restaurantfeed (Rating,Customerid,Restaurantid)>
+<!ELEMENT Deliveryagentfeeds (Deliveryagentfeed+)>
+<!ELEMENT Deliveryagentfeed (Rating,Customerid,DeliveryAgentid)>
+<!ELEMENT Payment ((UPI|Debit|Credit),amount,Restaurantid,Customerid,Orderid)>
+<!ELEMENT Order (Orderid,Customerid, Restaurantid,DeliveryAgentid,Ordercontent)>
+<!ELEMENT Cname (#PCDATA)>
+<!ELEMENT Cphone (#PCDATA)>
+<!ELEMENT Cemail (#PCDATA)>
+<!ELEMENT Caddress (#PCDATA)>
+<!ELEMENT Rname (#PCDATA)>
+<!ELEMENT Raddress (#PCDATA)>
+<!ELEMENT Rcontact (#PCDATA)>
+<!ELEMENT Drinks (#PCDATA)>
+<!ELEMENT item (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT Rating (#PCDATA)>
+<!ELEMENT amount (#PCDATA)>
+<!ELEMENT Dname (#PCDATA)>
+<!ELEMENT Dmodeotransport (#PCDATA)>
+<!ELEMENT Dcontact (#PCDATA)>
+<!ELEMENT City (#PCDATA)>
+<!ELEMENT State (#PCDATA)>
+<!ELEMENT Zip (#PCDATA)>
+]>
+<FoodDelivery>
+	<Customers>
+		<Customer ID="6548" gender ="male">
+			<Cname>Mayank Jain</Cname>
+			<Cphone>9256878932</Cphone>
+			<Cemail>mayank12@yahoo.com</Cemail>
+			<Caddress>
+				<City>Bangalore</City>
+				<State>Karnataka</State>
+				<Zip>560212</Zip>
+			</Caddress>
+		</Customer>
+		<Customer ID="6523" gender ="female">
+			<Cname>Nisha Singh</Cname>
+			<Cphone>8965475215</Cphone>
+			<Cemail>nisha68@gmail.com</Cemail>
+			<Caddress>
+				<City>Indore</City>
+				<State>Madhya Pradesh</State>
+				<Zip>560212</Zip>
+			</Caddress>
+		</Customer>
+		<Customer ID="8965" gender ="male">
+			<Cname>Ansh Prajapati</Cname>
+			<Cphone>8276878978</Cphone>
+			<Cemail>anshprajapati78@yahoo.com</Cemail>
+			<Caddress>
+				<City>Ajmer</City>
+				<State>Rajasthan</State>
+				<Zip>305801</Zip>
+			</Caddress>
+		</Customer>
+		<Customer ID="6128" gender ="male">
+			<Cname>Lokesh choudhary</Cname>
+			<Cphone>8356878652</Cphone>
+			<Cemail>lokeshchdry56@gmail.com</Cemail>
+			<Caddress>
+				<City>Bangalore</City>
+				<State>Karnataka</State>
+				<Zip>560212</Zip>
+			</Caddress>
+		</Customer>
+		<Customer ID="2548" gender ="female">
+			<Cname>Payal Malik</Cname>
+			<Cphone>9256878032</Cphone>
+			<Cemail>malikpayal@hotmail.com</Cemail>
+			<Caddress>
+				<City>Bangalore</City>
+				<State>Karnataka</State>
+				<Zip>563212</Zip>
+			</Caddress>
+		</Customer>
+	</Customers>
+	<Resturants>
+		<Resturant ID="789">
+			<Rname>Lazeez Dine</Rname>
+			<Rcontact>8234567890</Rcontact>
+			<Raddress>
+				<City>Bangalore</City>
+				<State>Karnataka</State>
+				<Zip>560212</Zip>
+			</Raddress>
+			<Rmenu>
+				<Vegmenu>
+					<item>
+						<name>Veg Biryani</name>
+						<price>350</price>
+					</item>
+					<item>
+						<name>Shahi Panner</name>
+						<price>250</price>
+					</item>
+					<item>
+						<name>Dal Fry</name>
+						<price>150</price>
+					</item>
+					<item>
+						<name>Plain Roti</name>
+						<price>5</price>
+					</item>
+					<item>
+						<name>Butter Roti</name>
+						<price>10</price>
+					</item>
+				</Vegmenu>
+				<Nonvegmenu>
+					<item>
+						<name>Non Veg Biryani</name>
+						<price>250</price>
+					</item>
+					<item>
+						<name>Chicken Tikka</name>
+						<price>210</price>
+					</item>
+					<item>
+						<name>Chicken Rolls</name>
+						<price>300</price>
+					</item>
+					<item>
+						<name>Mutton Curry</name>
+						<price>190</price>
+					</item>
+				</Nonvegmenu>
+				<Drinks>
+					<item>
+						<name>Virgin Mojito</name>
+						<price>120</price>
+					</item>
+					<item>
+						<name>ButterMilk</name>
+						<price>70</price>
+					</item>
+					<item>
+						<name>Lime Juice</name>
+						<price>110</price>
+					</item>
+					<item>
+						<name>Beer</name>
+						<price>150</price>
+					</item>
+				</Drinks>
+			</Rmenu>
+		</Resturant>
+		<Resturant ID="987">
+			<Rname>Crystal Park Restaurant</Rname>
+			<Rcontact>9864567890</Rcontact>
+			<Raddress>
+				<City>Ajmer</City>
+				<State>Rajasthan</State>
+				<Zip>305801</Zip>
+			</Raddress>
+			<Rmenu>
+				<Vegmenu>
+					<item>
+						<name>Dal Fry</name>
+						<price>210</price>
+					</item>
+					<item>
+						<name>Dal Makhani</name>
+						<price>220</price>
+					</item>
+					<item>
+						<name>Paneer Fry</name>
+						<price>260</price>
+					</item>
+					<item>
+						<name>Plain Roti</name>
+						<price>10</price>
+					</item>
+				</Vegmenu>
+				<Nonvegmenu>
+					<item>
+						<name>Chicken Cutlet</name>
+						<price>260</price>
+					</item>
+					<item>
+						<name>Chicken Shwarma</name>
+						<price>210</price>
+					</item>
+					<item>
+						<name>Mutton Rolls</name>
+						<price>200</price>
+					</item>
+					<item>
+						<name>Chicken Soup</name>
+						<price>110</price>
+					</item>
+				</Nonvegmenu>
+				<Drinks>
+					<item>
+						<name>Butter Milk</name>
+						<price>110</price>
+					</item>
+					<item>
+						<name>Orange Juice</name>
+						<price>110</price>
+					</item>
+					<item>
+						<name>Beer</name>
+						<price>210</price>
+					</item>
+					<item>
+						<name>Cold Coffee</name>
+						<price>150</price>
+					</item>
+				</Drinks>
+			</Rmenu>
+		</Resturant>
+	</Resturants>
+	<DeliveryAgents>
+	<DeliveryAgent DeliveryAgentid="127">
+		<Dname>Ganesh Rao</Dname>
+		<DContact>993456789</DContact>
+		<Dmodoftransport>Bike</Dmodoftransport>
+	</DeliveryAgent>
+	<DeliveryAgent DeliveryAgentid="324">
+		<Dname>Mahesh singh</Dname>
+		<DContact>993876789</DContact>
+		<Dmodoftransport>Scooter</Dmodoftransport>
+	</DeliveryAgent>
+	<DeliveryAgent DeliveryAgentid="256">
+		<Dname>Harshit arya</Dname>
+		<DContact>953456789</DContact>
+		<Dmodoftransport>Bike</Dmodoftransport>
+	</DeliveryAgent>
+	<DeliveryAgent DeliveryAgentid="228">
+		<Dname>Malhik Rao</Dname>
+		<DContact>903455789</DContact>
+		<Dmodoftransport>Cycle</Dmodoftransport>
+	</DeliveryAgent>
+	</DeliveryAgents>
+	<Feedbacks>
+		<Feedback>
+			<Customerfeeds>
+				<CustomerFeed>
+					<Customerid>8965</Customerid>
+					<DeliveryAgentid>228</DeliveryAgentid>
+					<Rating>4.5</Rating>
+				</CustomerFeed>
+				<CustomerFeed>
+					<Customerid>8965</Customerid>
+					<DeliveryAgentid>324</DeliveryAgentid>
+					<Rating>4</Rating>
+				</CustomerFeed>
+				<CustomerFeed>
+					<Customerid>6548</Customerid>
+					<DeliveryAgentid>127</DeliveryAgentid>
+					<Rating>3</Rating>
+				</CustomerFeed>
+				<CustomerFeed>
+					<Customerid>6548</Customerid>
+					<DeliveryAgentid>324</DeliveryAgentid>
+					<Rating>5</Rating>
+				</CustomerFeed>
+			</Customerfeeds>
+			<Restaurantfeeds>
+				<Restaurantfeed>
+					<Customerid>8965</Customerid>
+					<Restaurantid>987</Restaurantid>
+					<Rating>4</Rating>
+				</Restaurantfeed>
+				<Restaurantfeed>
+					<Customerid>6548</Customerid>
+					<Restaurantid>789</Restaurantid>
+					<Rating>5</Rating>
+				</Restaurantfeed>
+			</Restaurantfeeds>
+			<Deliveryagentfeeds>
+				<Deliveryagentfeed>
+					<Customerid>8965</Customerid>
+					<DeliveryAgentid>228</DeliveryAgentid>
+					<Rating>3.5</Rating>
+				</Deliveryagentfeed>
+				<Deliveryagentfeed>
+					<Customerid>6548</Customerid>
+					<DeliveryAgentid>324</DeliveryAgentid>
+					<Rating>4.5</Rating>
+				</Deliveryagentfeed>
+				<Deliveryagentfeed>
+					<Customerid>6548</Customerid>
+					<DeliveryAgentid>127</DeliveryAgentid>
+					<Rating>4</Rating>
+				</Deliveryagentfeed>
+				<Deliveryagentfeed>
+					<Customerid>8965</Customerid>
+					<DeliveryAgentid>324</DeliveryAgentid>
+					<Rating>3.5</Rating>
+				</Deliveryagentfeed>
+			</Deliveryagentfeeds>
+		</Feedback>
+	</Feedbacks>
+	<Payments>
+		<Payment>
+			<UPI>mayank@ybl</UPI>
+			<amount>410</amount>
+			<Orderid>56895</Orderid>
+			<Restaurantid>789</Restaurantid>
+			<Customerid>6548</Customerid>
+		</Payment>
+		<Payment>
+			<UPI>mayank@ybl</UPI>
+			<amount>650</amount>
+			<Orderid>99895</Orderid>
+			<Restaurantid>789</Restaurantid>
+			<Customerid>6548</Customerid>
+		</Payment>
+		<Payment>
+			<CreditCard>823654789665</CreditCard>
+			<amount>470</amount>
+			<Orderid>65499</Orderid>
+			<Restaurantid>987</Restaurantid>
+			<Customerid>8965</Customerid>
+		</Payment>
+		<Payment>
+			<DebitCard>528954789665</DebitCard>
+			<amount>490</amount>
+			<Orderid>4563</Orderid>
+			<Restaurantid>987</Restaurantid>
+			<Customerid>8965</Customerid>
+		</Payment>
+	</Payments>
+	<Orders>
+		<Order>
+			<Orderid>56895</Orderid>
+			<Customerid>6548</Customerid>
+			<Resturantid>789</Resturantid>
+			<DeliveryAgentid>127</DeliveryAgentid>
+			<Ordercontent>Chicken Rolls,Lime Juice</Ordercontent>
+		</Order>
+		<Order>
+			<Orderid>99895</Orderid>
+			<Customerid>6548</Customerid>
+			<Resturantid>789</Resturantid>
+			<DeliveryAgentid>324</DeliveryAgentid>
+			<Ordercontent>Shahi Panner,Dal Fry,Non Veg Biryani</Ordercontent>
+		</Order>
+		<Order>
+			<Orderid>65499</Orderid>
+			<Customerid>8965</Customerid>
+			<Resturantid>987</Resturantid>
+			<DeliveryAgentid>228</DeliveryAgentid>
+			<Ordercontent>Panner Fry,Dal Fry</Ordercontent>
+		</Order>
+			<Order>
+			<Orderid>4563</Orderid>
+			<Customerid>8965</Customerid>
+			<Resturantid>987</Resturantid>
+			<DeliveryAgentid>324</DeliveryAgentid>
+			<Ordercontent>Panner Fry,Dal Makhani,Plain Roti</Ordercontent>
+		</Order>
+	
+		
+	</Orders>
+</FoodDelivery>
